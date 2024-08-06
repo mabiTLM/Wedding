@@ -1,1 +1,23 @@
-;
+#root {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-image: url('./images/background.png');
+  }
+
+.welcome {
+    margin: auto;
+  }
+
+.imageCenter{
+    text-align: center;
+ }
+
+.calendar{
+  width: 50%;
+}
+
+.map{
+  width: 50%;
+  height: 30vh;
+}
