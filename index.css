@@ -15,9 +15,10 @@
 
 .calendar{
   width: 50%;
+  height: 40vh;
 }
 
 .map{
   width: 50%;
-  height: 30vh;
+  height: 40vh;
 }
