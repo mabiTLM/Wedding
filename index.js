@@ -43,26 +43,14 @@ function copyAccount(button) {
 Kakao.init('4a8ae79f847849b761fc92e3177717ca');  // 'YOUR_APP_KEY'에 카카오 JavaScript 키를 넣으세요
 console.log(Kakao.isInitialized());  // 초기화 확인
 
-// 카카오톡 공유 기능
 document.getElementById('kakao-share-btn').addEventListener('click', function () {
-  Kakao.Link.sendDefault({
-    objectType: 'feed',
-    content: {
-      title: '모바일 청첩장',
-      description: '우리의 결혼식에 초대합니다!',
-      link: {
-        mobileWebUrl: 'https://mabitlm.github.io/Wedding/',
-        webUrl: 'https://mabitlm.github.io/Wedding/',
-      },
+  Kakao.Share.sendDefault({
+    objectType: 'text',
+    text: '우리의 결혼식에 초대합니다!',
+    link: {
+      mobileWebUrl: 'https://mabitlm.github.io/Wedding/',
+      webUrl: 'https://mabitlm.github.io/Wedding/',
     },
-    buttons: [
-      {
-        title: '웹으로 보기',
-        link: {
-          mobileWebUrl: 'https://mabitlm.github.io/Wedding/',
-          webUrl: 'https://mabitlm.github.io/Wedding/',
-        },
-      },
-    ]
+    buttonTitle: '청첩장 보기' // 공유 시 표시되는 버튼 제목
   });
 });
