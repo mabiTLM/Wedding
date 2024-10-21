@@ -50,11 +50,6 @@ function copyLink(button) {
   });
 }
 
-
-
-
-
-
 // 카카오 SDK 초기화
 Kakao.init('4a8ae79f847849b761fc92e3177717ca');  // 'YOUR_APP_KEY'에 카카오 JavaScript 키를 넣으세요
 console.log(Kakao.isInitialized());  // 초기화 확인
