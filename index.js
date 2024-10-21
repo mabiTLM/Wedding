@@ -15,3 +15,12 @@ function find_day(){
 }
 find_day();
 setInterval(find_day, 1000);  //초마다 디데이 기능 실행
+
+function showAccount() {
+  var accountInfo = document.getElementById('account');
+  if (accountInfo.style.display === "none") {
+    accountInfo.style.display = "block";
+  } else {
+    accountInfo.style.display = "none";
+  }
+}

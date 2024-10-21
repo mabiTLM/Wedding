@@ -22,3 +22,26 @@
   width: 80%;
 
 }
+
+.account{
+  text-align: center;
+}
+
+.show-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.show-button:hover {
+  background-color: #45a049;
+}
+
+.account-info {
+  display: none;
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #333;
+}
