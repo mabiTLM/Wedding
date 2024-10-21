@@ -6,11 +6,12 @@ function find_day() {
   const day_gap = christmas - today;
 
   const day = Math.floor(day_gap / (1000 * 60 * 60 * 24));  // 남은 일수
-  const hour = Math.floor(day_gap / (1000 * 60 * 60) % 24);
-  const min = Math.floor(day_gap / (1000 * 60) % 60);
-  const sec = Math.floor(day_gap / 1000 % 60);
+  //const hour = Math.floor(day_gap / (1000 * 60 * 60) % 24);
+  //const min = Math.floor(day_gap / (1000 * 60) % 60);
+  //const sec = Math.floor(day_gap / 1000 % 60);
 
-  DDay.innerText = `D-day까지 ${day}일 ${hour}시간 ${min}분 ${sec}초`;
+  //DDay.innerText = `D-day ${day}일 ${hour}시간 ${min}분 ${sec}초`;
+  DDay.innerText = `D-${day}`;
 }
 
 find_day();

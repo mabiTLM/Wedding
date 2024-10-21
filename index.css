@@ -6,6 +6,17 @@
 
 .welcome {
   margin: auto;
+  padding-top: 1%;
+}
+
+.welcome_name{
+  font-size: 20pt;
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+
+.where_text{
+  margin: auto;
 }
 
 .imageCenter {
