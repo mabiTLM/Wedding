@@ -39,6 +39,22 @@ function copyAccount(button) {
   });
 }
 
+
+function copyLink(button) {
+  var accountText = "https://mabitlm.github.io/Wedding/"
+  // 클립보드에 복사
+  navigator.clipboard.writeText(accountText).then(function() {
+    alert('링크가 복사되었습니다: ' + accountText);
+  }).catch(function(err) {
+    console.error('복사 실패:', err);
+  });
+}
+
+
+
+
+
+
 // 카카오 SDK 초기화
 Kakao.init('4a8ae79f847849b761fc92e3177717ca');  // 'YOUR_APP_KEY'에 카카오 JavaScript 키를 넣으세요
 console.log(Kakao.isInitialized());  // 초기화 확인
