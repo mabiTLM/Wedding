@@ -18,9 +18,11 @@ setInterval(find_day, 1000);  //초마다 디데이 기능 실행
 
 function showAccount() {
   var accountInfo = document.getElementById('account');
-  if (accountInfo.style.display === "none") {
-    accountInfo.style.display = "block";
+  var currentDisplay = window.getComputedStyle(accountInfo).display;  // 실제 스타일 값을 가져옴
+
+  if (currentDisplay === "none") {
+    accountInfo.style.display = "block";  // 보이기
   } else {
-    accountInfo.style.display = "none";
+    accountInfo.style.display = "none";   // 숨기기
   }
 }
