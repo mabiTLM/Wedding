@@ -55,18 +55,17 @@ document.getElementById('kakao-share-btn').addEventListener('click', function ()
     content: {
       title: '모바일 청첩장',
       description: '우리의 결혼식에 초대합니다!',
-      imageUrl: 'https://your-image-url.com/image.jpg', // 이미지 URL
       link: {
-        mobileWebUrl: 'https://your-wedding-invitation-url.com',
-        webUrl: 'https://your-wedding-invitation-url.com',
+        mobileWebUrl: 'https://mabitlm.github.io/Wedding/',
+        webUrl: 'https://mabitlm.github.io/Wedding/',
       },
     },
     buttons: [
       {
         title: '웹으로 보기',
         link: {
-          mobileWebUrl: 'https://your-wedding-invitation-url.com',
-          webUrl: 'https://your-wedding-invitation-url.com',
+          mobileWebUrl: 'https://mabitlm.github.io/Wedding/',
+          webUrl: 'https://mabitlm.github.io/Wedding/',
         },
       },
     ]
@@ -76,21 +75,21 @@ document.getElementById('kakao-share-btn').addEventListener('click', function ()
 // 카카오스토리 공유 기능
 document.getElementById('kakao-story-btn').addEventListener('click', function () {
   Kakao.Story.share({
-    url: 'https://your-wedding-invitation-url.com',
+    url: 'https://mabitlm.github.io/Wedding/',
     text: '우리의 결혼식에 초대합니다!'
   });
 });
 
 // 네이버 라인 공유 기능
 document.getElementById('line-share-btn').addEventListener('click', function () {
-  const url = 'https://your-wedding-invitation-url.com';
+  const url = 'https://mabitlm.github.io/Wedding/';
   const lineShareUrl = `https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(url)}`;
   window.open(lineShareUrl, '_blank');
 });
 
 // 페이스북 공유 기능
 document.getElementById('facebook-share-btn').addEventListener('click', function () {
-  const url = 'https://your-wedding-invitation-url.com';
+  const url = 'https://mabitlm.github.io/Wedding/';
   const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
   window.open(facebookShareUrl, '_blank');
 });
