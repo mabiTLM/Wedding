@@ -70,18 +70,32 @@ document.getElementById('kakao-share-btn').addEventListener('click', function ()
 });
 
 
-
 // 슬라이드 이미지를 클릭했을 때 모달에 해당 이미지 표시
 const carouselItems = document.querySelectorAll('.carousel-item img');
 const modal = document.getElementById('imageModal');
 const modalImage = document.getElementById('modalImage');
+const modalCarousel = document.getElementById('modalCarousel');
 
-carouselItems.forEach(item => {
-    item.addEventListener('click', () => {
-        modalImage.src = item.src; // 모달 이미지 소스 변경
-        const bootstrapModal = new bootstrap.Modal(modal);
-        bootstrapModal.show(); // 모달 표시
+carouselItems.forEach((item, index) => {
+  item.addEventListener('click', () => {
+    const bootstrapModal = new bootstrap.Modal(modal);
+    
+    // 모달 열기 전 이미지 소스를 설정
+    const activeItem = modalCarousel.querySelector('.carousel-item.active');
+    activeItem.querySelector('img').src = item.src;
+
+    // 활성화된 슬라이드 설정
+    const carouselItemsInModal = modalCarousel.querySelectorAll('.carousel-item');
+    carouselItemsInModal.forEach((carouselItem, idx) => {
+      if (idx === index) {
+        carouselItem.classList.add('active');
+      } else {
+        carouselItem.classList.remove('active');
+      }
     });
+
+    bootstrapModal.show(); // 모달 표시
+  });
 });
 
 // 모달이 닫힐 때 이미지 초기화
