@@ -5,6 +5,8 @@
     <title>임현규♡최수진의 모바일청첩장</title>
     <!-- 카카오 SDK -->
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spoqa+Han+Sans&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,26 +18,30 @@
   <body>
     <div id="root">
       <div class="container p-3">
-        <h3>
-          <div id="DDay" class="DDay imageCenter"></div>
-        </h3>
-        <div id="info" class="d-none d-sm-flex justify-content-between align-items-center gap-4">
-          <div class="welcome">
-            <div class="welcome_name">임현규</div>
-            <div class="welcome_name">최수진</div>
-          </div>
-        </div>
 
-        <div class="imageCenter">
+        <div class="imageCenter pink-back">
+          <div class="open-date">
+          2025/09/06
+          </div>
+          <div id="DDay" class="DDay pink-back">
+          </div>
+          <hr/>  
+          <div id="info" class="d-none d-sm-flex justify-content-between align-items-center gap-4 pink-back">
+            <div class="welcome">
+              <div class="welcome_name">임현규</div>
+              <div class="welcome_name">최수진</div>
+            </div>
+          </div>
           <div class="where_text">
             2025년 9월 6일 토요일 오전 11시
             <br />세인트 메리엘 2F
           </div>
+          <br />
+          <br />
         </div>
-        <br />
-        <br />
 
-        <div class="imageCenter">
+        <div class="imageCenter basi-back">
+          <br>
           <div>
           09/06
           </div>
@@ -45,11 +51,11 @@
           <h3>결혼합니다</h3>
           <br>
           <div>
-            서로의 사랑을 믿고,<br>
-            앞으로의 모든 날을 함께할 준비가 되었습니다.<br>
-            임현규 ♥ 최수진<br>
-            2025년 9월 6일 토요일<br>
-            세인트 메리엘 2F에서 우리의 시작을 축복해 주세요.
+            어느 봄, 친구로 시작한 인연은<br>
+            어느 여름, 연인이 되어 사랑을 꽃피우고<br>
+            이번 가을, 부부로의 여정을 시작합니다.<br>
+            저희의 진심어린 한걸음을 밝혀주실<br>
+            눈부신 별빛, 소중한 분들을 초대합니다..
           </div>
           <br>
           <br>
@@ -73,44 +79,98 @@
               최수진
             </div>
           </div>
+          <br>
         </div>
 
         </div>
 
-        <br>
-        <div class="imageCenter">
-          <div>달력</div>
+      
+        <div class="imageCenter pink-back">
+          <br>
+          <div>
+            09/06
+            </div>
+          <hr/>
+          <br>
+          <div><h3>날짜</h3></div>
+          <br>
+          <img src="./images/calendar.png" alt="달력" />
           <br />
+          <br>
+          <br>
         </div>
 
-        <div class="imageCenter">
-          <div>갤러리</div>
+        <div class="imageCenter basi-back">
+          <br>
+          <div>
+            09/06
+            </div>
+          <hr/>
           <br />
+          <div><h3>갤러리</h3></div>
+          <br>
         </div>
 
-        <div class="imageCenter">
-          <div>오시는길</div>
+        <div class="imageCenter pink-back">
           <br />
+          <div>
+            09/06
+            </div>
+          <hr/>
+          <br />
+          <div>
+            <h3>오시는길</h3>
+          </div>
+          <br />
+          <div>
+          <h5>지하철</h5>
+          <div>
+            강남역 2호선 1번출구 앞 셔틀버스 (7분 간격) <br>
+            신분당선 4번출구 도보 10분
+          </div>
+          </div>
+          <br>
+         <div>
+          <h5>자가용</h5>
+         </div>
+          <div>
+          예식장 도착 시 주차요원이 주차장 안내 예정입니다.<br>
+          주차는 2시간 무료 제공됩니다.(이후 10분당 1,000원)
+          </div>
+          <br>
+          <br>
         </div>
 
-        <div class="imageCenter">
+        <div class="imageCenter basi-back">
+         <br>
+          <div>
+            09/06
+            </div>
+          <hr/>
+          <br>
+          <h3>
           축하의 마음 전하기
+          </h3>
+          <br>
+          <div>
+            축하의 마음을 담아 축의금을 전달해 보세요.
+          </div>
           <!-- 신랑측 계좌번호 -->
           <div class="account">
             <div>
-              <button class="show-button" onclick="toggleAccount('groom-account-1')">신랑 임현규</button>
+              <button class="show-button sky-back" onclick="toggleAccount('groom-account-1')">신랑 임현규</button>
             </div>
             <div id="groom-account-1" class="account-info">
-              <div class="account-content">
+              <div class="account-content  sky-back">
                 <div class="account-text">하나은행 <span class="account-number">586-910082-82107</span></div>
                 <button class="copy-button" onclick="copyAccount(this)">복사</button>
               </div>
             </div>
 
             <div>
-              <button class="show-button" onclick="toggleAccount('groom-account-2')">신랑 아버지 임희천</button>
+              <button class="show-button sky-back" onclick="toggleAccount('groom-account-2')">신랑 아버지 임희천</button>
             </div>
-            <div id="groom-account-2" class="account-info">
+            <div id="groom-account-2" class="account-info sky-back">
               <div class="account-content">
                 <div class="account-text">하나은행 <span class="account-number">111111111111</span></div>
                 <button class="copy-button" onclick="copyAccount(this)">복사</button>
@@ -118,9 +178,9 @@
             </div>
 
             <div>
-              <button class="show-button" onclick="toggleAccount('groom-account-3')">신랑 어머니 한지수</button>
+              <button class="show-button sky-back" onclick="toggleAccount('groom-account-3')">신랑 어머니 한지수</button>
             </div>
-            <div id="groom-account-3" class="account-info">
+            <div id="groom-account-3" class="account-info sky-back">
               <div class="account-content">
                 <div class="account-text">하나은행 <span class="account-number">2222222222</span></div>
                 <button class="copy-button" onclick="copyAccount(this)">복사</button>
@@ -131,9 +191,9 @@
           <!-- 신부측 계좌번호 -->
           <div class="account">
             <div>
-              <button class="show-button" onclick="toggleAccount('bride-account-1')">신부 최수진</button>
+              <button class="show-button pink-back" onclick="toggleAccount('bride-account-1')">신부 최수진</button>
             </div>
-            <div id="bride-account-1" class="account-info">
+            <div id="bride-account-1" class="account-info pink-back">
               <div class="account-content">
                 <div class="account-text">국민은행 <span class="account-number">878302-01-140656</span></div>
                 <button class="copy-button" onclick="copyAccount(this)">복사</button>
@@ -141,9 +201,9 @@
             </div>
 
             <div>
-              <button class="show-button" onclick="toggleAccount('bride-account-2')">신부 아버지 최이원</button>
+              <button class="show-button pink-back" onclick="toggleAccount('bride-account-2')">신부 아버지 최이원</button>
             </div>
-            <div id="bride-account-2" class="account-info">
+            <div id="bride-account-2" class="account-info pink-back">
               <div class="account-content">
                 <div class="account-text">국민은행 <span class="account-number">884-21-0035-388</span></div>
                 <button class="copy-button" onclick="copyAccount(this)">복사</button>
@@ -151,18 +211,26 @@
             </div>
 
             <div>
-              <button class="show-button" onclick="toggleAccount('bride-account-3')">신부 어머니 이명숙</button>
+              <button class="show-button pink-back" onclick="toggleAccount('bride-account-3')">신부 어머니 이명숙</button>
             </div>
-            <div id="bride-account-3" class="account-info">
+            <div id="bride-account-3" class="account-info pink-back">
               <div class="account-content">
                 <div class="account-text">국민은행 <span class="account-number">037-21-0810-070</span></div>
                 <button class="copy-button" onclick="copyAccount(this)">복사</button>
               </div>
             </div>
           </div>
+          <br>
+          <br>
+        </div>
+        <div class="imageCenter pink-back">
+          <div class="end-ment">
+            Thank<br>
+            you
+          </div>
         </div>
 
-        <div class="imageCenter">
+        <div class="imageCenter pink-back">
           <button class="link-button" onclick="copyLink(this)">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9.43385 12.2786L9.22998 12.2461C8.81234 12.1794 8.39991 12.0367 8.01269 11.8132C6.31102 10.8307 5.72798 8.65478 6.71044 6.95311L9.43765 2.22945C10.4201 0.527773 12.596 -0.0552586 14.2977 0.927201C15.9994 1.90966 16.5824 4.08558 15.5999 5.78725L14.1921 8.22573L12.4633 7.22763L13.8712 4.78915C14.3024 4.04225 14.0465 3.08719 13.2996 2.65596C12.5527 2.22474 11.5976 2.48064 11.1664 3.22755L8.4392 7.95121C8.00798 8.69811 8.26389 9.65317 9.01079 10.0844C9.33086 10.2692 9.68834 10.3278 10.0271 10.2758L10.6449 10.1811L9.43385 12.2786Z" fill="#817b7b">
@@ -182,7 +250,7 @@
             </svg>
           </button>
         </div>
-        <div class="end-text">
+        <div class="end-text pink-back">
           <div class="end-text-comment">링크복사</div>
           <div class="end-text-comment"> 카카오톡</div>
         </div>

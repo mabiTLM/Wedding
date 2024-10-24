@@ -1,7 +1,22 @@
+body{
+  font-family: 'Spoqa Han Sans', sans-serif;
+}
+
 #root {
   width: 100%;
   height: 100%;
   overflow: auto;
+}
+
+.open-date{
+  font-size: 20px;
+  padding-top: 20px;
+
+}
+
+.DDay{
+  font-size: 20px; /* h3의 기본 크기 */
+  font-weight: bold; /* 두껍게 */
 }
 
 .welcome {
@@ -13,10 +28,6 @@
   font-size: 20pt;
   font-weight: bold;
   margin-bottom: 10%;
-}
-
-.where_text{
-  margin: auto;
 }
 
 .imageCenter {
@@ -142,4 +153,23 @@
 
 .end-text-comment{
   margin-left: 2%;
+}
+
+.end-ment{
+  font-family: 'Great Vibes', cursive;
+  padding: 30px;
+  font-size: 40px;
+}
+
+.pink-back{
+ background-color:  #FFEBF2;
+
+}
+
+.basi-back{
+  background-color: #FAF3E0;
+}
+
+.sky-back{
+  background-color: #87CEEB;
 }
