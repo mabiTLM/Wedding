@@ -35,8 +35,12 @@ body{
 }
 
 .calendar {
-  width: 80%;
+  text-align: center; /* 텍스트 중앙 정렬 */
+  width: 100%; /* 가로 폭을 100%로 설정 */
+  display: flex; /* flexbox 사용 */
+  justify-content: center; /* 중앙 정렬 */
 }
+
 
 .map {
   width: 80%;
