@@ -102,3 +102,14 @@ carouselItems.forEach((item, index) => {
 modal.addEventListener('hidden.bs.modal', () => {
     modalImage.src = ''; // 이미지 초기화
 });
+
+
+function openModal(imageSrc) {
+  // 모달에 이미지를 설정하고 표시합니다.
+  const modalImage = document.getElementById('modalImage');
+  modalImage.src = imageSrc;
+  
+  // 모달 표시
+  const modal = new bootstrap.Modal(document.getElementById('imageModal'));
+  modal.show();
+}
