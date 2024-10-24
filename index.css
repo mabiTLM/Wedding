@@ -33,30 +33,43 @@
 
 .account {
   margin-left: 10%;
+  margin-top: 5%;
   text-align: left;
 }
 
 .show-button {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  text-align: left;
+  width: 90%;
   padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 5px;
+  background-color: #f1e5d4;
   cursor: pointer;
 }
 
 .show-button:hover {
-  background-color: #45a049;
+  background-color: #fefefe;
 }
 
 /* 계좌번호 섹션 초기 상태: 숨김 */
 .account-info {
+  border: 1px solid black;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 90%;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease-out; /* 슬라이드 애니메이션 */
-  margin-top: 20px;
-  font-size: 1.2em;
+  margin-top: 0px;
+  margin-bottom: 1%;
   color: #333;
+  background-color: #f1e5d4;
+}
+
+/* account-info 내부의 내용에만 padding 적용 */
+.account-info p {
+  padding-top: 10px;
+  padding-left: 20px;
 }
 
 /* 계좌번호 섹션이 보일 때 */
