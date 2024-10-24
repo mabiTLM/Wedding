@@ -10,18 +10,16 @@
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
-    >
+    />
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
     <div id="root">
       <div class="container p-3">
-          <h3>
-            <div id="DDay" class="DDay imageCenter"></div>
-          </h3>
-        <div
-          id="info"
-          class="d-none d-sm-flex justify-content-between align-items-center gap-4">
+        <h3>
+          <div id="DDay" class="DDay imageCenter"></div>
+        </h3>
+        <div id="info" class="d-none d-sm-flex justify-content-between align-items-center gap-4">
           <div class="welcome">
             <div class="welcome_name">임현규</div>
             <div class="welcome_name">최수진</div>
@@ -29,74 +27,152 @@
         </div>
 
         <div class="imageCenter">
-          <div class="where_text">2025년 9월 6일 토요일 오전 11시
-            <br>세인트 메리엘 2F
+          <div class="where_text">
+            2025년 9월 6일 토요일 오전 11시
+            <br />세인트 메리엘 2F
           </div>
-          <br>
         </div>
+        <br />
+        <br />
+
         <div class="imageCenter">
-          <div>지도 넣을 곳</div>
+          <div>
+          09/06
+          </div>
+        <hr/>
+        <div>
+          <br>
+          <h3>결혼합니다</h3>
           <br>
           <div>
-            <img src="./images/map.PNG" alt="map" class="map"/>
+            서로의 사랑을 믿고,<br>
+            앞으로의 모든 날을 함께할 준비가 되었습니다.<br>
+            임현규 ♥ 최수진<br>
+            2025년 9월 6일 토요일<br>
+            세인트 메리엘 2F에서 우리의 시작을 축복해 주세요.
           </div>
+          <br>
+          <br>
+          <div class="name-container">
+            <div class="parent-name">
+              임희천<br>
+              한지수
+            </div>
+            의 차남
+            <div class="child-name">
+              임현규
+            </div>
+          </div>
+          <div class="name-container">
+            <div class="parent-name">
+              최이원<br>
+              이원순
+            </div>
+            의 장녀
+            <div class="child-name">
+              최수진
+            </div>
+          </div>
+        </div>
+
+        </div>
+
+        <br>
+        <div class="imageCenter">
+          <div>달력</div>
+          <br />
+        </div>
+
+        <div class="imageCenter">
+          <div>갤러리</div>
+          <br />
+        </div>
+
+        <div class="imageCenter">
+          <div>오시는길</div>
+          <br />
         </div>
 
         <div class="imageCenter">
           축하의 마음 전하기
-        <!-- 신랑측 계좌번호 -->
-        <div class="account">
-          <div><button class="show-button" onclick="toggleAccount('groom-account-1')">신랑 임현규</button></div>
-          <div id="groom-account-1" class="account-info">
-            <p>하나은행 <span class="account-number">586-910082-82107</span>
-              <button class="copy-button" onclick="copyAccount(this)">복사</button>
-            </p>
-          </div>
-          <div><button class="show-button" onclick="toggleAccount('groom-account-2')">신랑 아버지 임희천</button></div>
-          <div id="groom-account-2" class="account-info">
-            <p>하나은행 <span class="account-number">111111111111</span>
-              <button class="copy-button" onclick="copyAccount(this)">복사</button>
-            </p>
-          </div>
-          <div><button class="show-button" onclick="toggleAccount('groom-account-3')">신랑 어머니 한지수</button></div>
-          <div id="groom-account-3" class="account-info">
-            <p>하나은행 <span class="account-number">2222222222</span>
-              <button class="copy-button" onclick="copyAccount(this)">복사</button>
-            </p>
-          </div>
-        </div>
+          <!-- 신랑측 계좌번호 -->
+          <div class="account">
+            <div>
+              <button class="show-button" onclick="toggleAccount('groom-account-1')">신랑 임현규</button>
+            </div>
+            <div id="groom-account-1" class="account-info">
+              <div class="account-content">
+                <div class="account-text">하나은행 <span class="account-number">586-910082-82107</span></div>
+                <button class="copy-button" onclick="copyAccount(this)">복사</button>
+              </div>
+            </div>
 
-        <!-- 신부측 계좌번호 -->
-        <div class="account">
-          <div><button class="show-button" onclick="toggleAccount('bride-account-1')">신부 최수진</button></div>
-          <div id="bride-account-1" class="account-info">
-            <p>국민은행 <span class="account-number">878302-01-140656</span>
-              <button class="copy-button" onclick="copyAccount(this)">복사</button>
-            </p>
-          </div>
-          <div><button class="show-button" onclick="toggleAccount('bride-account-2')">신부 아버지 최이원</button></div>
-          <div id="bride-account-2" class="account-info">
-            <p>국민은행 <span class="account-number">884-21-0035-388</span>
-              <button class="copy-button" onclick="copyAccount(this)">복사</button>
-            </p>
-          </div>
-          <div><button class="show-button" onclick="toggleAccount('bride-account-3')">신부 어머니 이명숙</button></div>
-          <div id="bride-account-3" class="account-info">
-            <p>국민은행 <span class="account-number">037-21-0810-070</span>
-              <button class="copy-button" onclick="copyAccount(this)">복사</button>
-            </p>
-          </div>
-        </div>
-        </div>
+            <div>
+              <button class="show-button" onclick="toggleAccount('groom-account-2')">신랑 아버지 임희천</button>
+            </div>
+            <div id="groom-account-2" class="account-info">
+              <div class="account-content">
+                <div class="account-text">하나은행 <span class="account-number">111111111111</span></div>
+                <button class="copy-button" onclick="copyAccount(this)">복사</button>
+              </div>
+            </div>
 
+            <div>
+              <button class="show-button" onclick="toggleAccount('groom-account-3')">신랑 어머니 한지수</button>
+            </div>
+            <div id="groom-account-3" class="account-info">
+              <div class="account-content">
+                <div class="account-text">하나은행 <span class="account-number">2222222222</span></div>
+                <button class="copy-button" onclick="copyAccount(this)">복사</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 신부측 계좌번호 -->
+          <div class="account">
+            <div>
+              <button class="show-button" onclick="toggleAccount('bride-account-1')">신부 최수진</button>
+            </div>
+            <div id="bride-account-1" class="account-info">
+              <div class="account-content">
+                <div class="account-text">국민은행 <span class="account-number">878302-01-140656</span></div>
+                <button class="copy-button" onclick="copyAccount(this)">복사</button>
+              </div>
+            </div>
+
+            <div>
+              <button class="show-button" onclick="toggleAccount('bride-account-2')">신부 아버지 최이원</button>
+            </div>
+            <div id="bride-account-2" class="account-info">
+              <div class="account-content">
+                <div class="account-text">국민은행 <span class="account-number">884-21-0035-388</span></div>
+                <button class="copy-button" onclick="copyAccount(this)">복사</button>
+              </div>
+            </div>
+
+            <div>
+              <button class="show-button" onclick="toggleAccount('bride-account-3')">신부 어머니 이명숙</button>
+            </div>
+            <div id="bride-account-3" class="account-info">
+              <div class="account-content">
+                <div class="account-text">국민은행 <span class="account-number">037-21-0810-070</span></div>
+                <button class="copy-button" onclick="copyAccount(this)">복사</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div class="imageCenter">
           <button class="link-button" onclick="copyLink(this)">링크복사</button>
-          
+
           <!-- 카카오톡 공유 버튼 -->
-          <button id="kakao-share-btn"><svg width="20" height="20" viewBox="0 0 20 20">
-            <path d="M10 3.26666C5.96831 3.26666 2.70001 5.84243 2.70001 9.01975C2.70001 11.074 4.06638 12.8764 6.12175 13.8942C6.00993 14.2797 5.40319 16.374 5.37904 16.5385C5.37904 16.5385 5.36451 16.6621 5.4446 16.7092C5.52469 16.7564 5.61889 16.7198 5.61889 16.7198C5.84856 16.6877 8.2822 14.979 8.70342 14.6823C9.12422 14.7419 9.55752 14.7728 10 14.7728C14.0317 14.7728 17.3 12.1971 17.3 9.01975C17.3 5.84243 14.0317 3.26666 10 3.26666Z" fill="#817b7b"></path>
-          </svg>
+          <button id="kakao-share-btn">
+            <svg width="20" height="20" viewBox="0 0 20 20">
+              <path
+                d="M10 3.26666C5.96831 3.26666 2.70001 5.84243 2.70001 9.01975C2.70001 11.074 4.06638 12.8764 6.12175 13.8942C6.00993 14.2797 5.40319 16.374 5.37904 16.5385C5.37904 16.5385 5.36451 16.6621 5.4446 16.7092C5.52469 16.7564 5.61889 16.7198 5.61889 16.7198C5.84856 16.6877 8.2822 14.979 8.70342 14.6823C9.12422 14.7419 9.55752 14.7728 10 14.7728C14.0317 14.7728 17.3 12.1971 17.3 9.01975C17.3 5.84243 14.0317 3.26666 10 3.26666Z"
+                fill="#817b7b"
+              ></path>
+            </svg>
           </button>
         </div>
       </div>

@@ -28,12 +28,15 @@ function toggleAccount(accountId) {
 }
 
 function copyAccount(button) {
-  // 클릭된 버튼의 부모 <p> 요소에서 계좌번호를 가져옵니다.
+  // 클릭된 버튼의 부모 <p> 에서 계좌번호
   var accountText = button.parentElement.querySelector('.account-number').innerText;
 
+  // 하이픈(-) 제거
+  var cleanedAccountText = accountText.replace(/-/g, '');
+
   // 클립보드에 복사
-  navigator.clipboard.writeText(accountText).then(function() {
-    alert('계좌번호가 복사되었습니다: ' + accountText);
+  navigator.clipboard.writeText(cleanedAccountText).then(function() {
+    alert('계좌번호가 복사되었습니다: ' + cleanedAccountText);
   }).catch(function(err) {
     console.error('계좌번호 복사 실패:', err);
   });
@@ -42,7 +45,7 @@ function copyAccount(button) {
 
 function copyLink(button) {
   var accountText = "https://mabitlm.github.io/Wedding/"
-  // 클립보드에 복사
+  // 링크 복사
   navigator.clipboard.writeText(accountText).then(function() {
     alert('링크가 복사되었습니다: ' + accountText);
   }).catch(function(err) {

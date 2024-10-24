@@ -66,13 +66,49 @@
   background-color: #f1e5d4;
 }
 
-/* account-info 내부의 내용에만 padding 적용 */
-.account-info p {
-  padding-top: 10px;
-  padding-left: 20px;
-}
-
 /* 계좌번호 섹션이 보일 때 */
 .account-info.show {
   max-height: 500px; /* 충분히 큰 값으로 설정 */
+}
+
+.account-content {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start; /* 왼쪽 정렬 */
+}
+.account-text {
+  padding: 10px 20px;
+}
+
+.copy-button {
+  margin-left: auto; /* 버튼을 오른쪽 끝으로 이동 */
+  padding: 5px 10px; /* 버튼 패딩 추가 */
+  background-color: #e0e0e0; /* 버튼 배경색 */
+  border: none; /* 기본 테두리 없애기 */
+  border-radius: 5px; /* 모서리 둥글게 */
+  cursor: pointer; /* 커서 포인터로 변경 */
+}
+.copy-button:hover {
+  background-color: #d3d3d3; /* 버튼 호버 색상 */
+}
+
+
+
+.name-container {
+  font-size: 16pt;
+  display: flex;
+  align-items: center; /* 세로 정렬을 중앙으로 */
+  justify-content: center; /* 수평 정렬 중앙 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+  margin-bottom: 5%;
+}
+
+.parent-name {
+  /* 부모 이름 영역에 대한 스타일 */
+  margin-right: 2%; /* 두 영역 사이의 간격 조정 */
+}
+
+.child-name{
+  margin-left: 2%;
+  font-weight: bold;
 }
