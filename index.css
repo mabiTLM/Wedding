@@ -58,7 +58,6 @@ body{
   text-align: left;
   width: 90%;
   padding: 10px 20px;
-  background-color: #f1e5d4;
   cursor: pointer;
 }
 
@@ -79,7 +78,6 @@ body{
   margin-top: 0px;
   margin-bottom: 1%;
   color: #333;
-  background-color: #f1e5d4;
 }
 
 /* 계좌번호 섹션이 보일 때 */
