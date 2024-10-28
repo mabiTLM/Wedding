@@ -174,7 +174,9 @@ body{
 
 .sky-back{
   background-color: #BFEFFF;
-}/*87CEEB , B0E2FF, BFEFFF 뭐가 좋을까 */
+}/*87CEEB , B0E2FF, BFEFFF 뭐가 좋을까*/
+
+
 
 
 .carousel-inner img {
@@ -189,3 +191,6 @@ body{
   height: auto;
   max-height: 80vh; /* 최대 높이 설정 */
 }
+
+/* 모달 스타일 */
+.modal img { max-width: 100%; height: auto; }

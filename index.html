@@ -5,9 +5,6 @@
     <title>임현규♡최수진의 모바일청첩장</title>
     <!-- 카카오 SDK -->
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
-    <!-- 부트스트랩 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybN0cq1Xz7sYjH+I/BESV5iHtM7f9syE/Gsk7VrC2Y8F5W5w" crossorigin="anonymous"></script>
     <!--폰트 -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spoqa+Han+Sans&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
@@ -18,6 +15,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <!-- 기본 css -->
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
@@ -119,6 +117,29 @@
           <br />
           <div><h3>갤러리</h3></div>
           <br>
+
+           <!-- Carousel 슬라이드 영역 -->
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/calendar.png" class="d-block w-100 slide-img" alt="사진 1">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/copy_button.png" class="d-block w-100 slide-img" alt="사진 2">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/map.PNG" class="d-block w-100 slide-img" alt="사진 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
 
 
@@ -273,6 +294,25 @@
       </div>
     </div>   
 
+
+      <!-- 모달 창 -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img id="modalImage" src="" alt="확대된 사진" class="w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+    <!-- 부트스트랩js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybN0cq1Xz7sYjH+I/BESV5iHtM7f9syE/Gsk7VrC2Y8F5W5w" crossorigin="anonymous"></script>
     <script src="index.js"></script>
   </body>
 </html>

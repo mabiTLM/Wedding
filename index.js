@@ -68,3 +68,16 @@ document.getElementById('kakao-share-btn').addEventListener('click', function ()
     buttonTitle: '청첩장 보기' // 공유 시 표시되는 버튼 제목
   });
 });
+
+
+
+
+
+// 이미지 클릭 시 모달 열기
+document.querySelectorAll('.slide-img').forEach((img) => {
+  img.addEventListener('click', (event) => {
+    const src = event.target.getAttribute('src');
+    document.getElementById('modalImage').setAttribute('src', src);
+    new bootstrap.Modal(document.getElementById('imageModal')).show();
+  });
+});
