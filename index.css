@@ -58,6 +58,7 @@ body{
   padding: 10px 20px;
   background-color: #f1e5d4;
   cursor: pointer;
+  border-bottom: none;
 }
 
 .show-button:hover {
@@ -66,6 +67,8 @@ body{
 
 /* 계좌번호 섹션 초기 상태: 숨김 */
 .account-info {
+  border: 1px solid black;
+  border-top: none;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   width: 90%;
@@ -76,13 +79,11 @@ body{
   margin-bottom: 1%;
   color: #333;
   background-color: #f1e5d4;
-  border: none;
 }
 
 /* 계좌번호 섹션이 보일 때 */
 .account-info.show {
   border: 1px solid black;
-  border-top: none;
   max-height: 500px; /* 충분히 큰 값으로 설정 */
 }
 
