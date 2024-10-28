@@ -192,5 +192,13 @@ body{
   max-height: 80vh; /* 최대 높이 설정 */
 }
 
+/* 모달 창이 화면을 꽉 채우고 검은색 배경으로 설정 */
+.modal-fullscreen .modal-content {
+  background-color: #000;
+}
+
 /* 모달 스타일 */
-.modal img { max-width: 100%; height: auto; }
+.modal-img {
+  height: 100vh;
+  object-fit: contain; /* 이미지 비율을 유지하면서 화면 가득 채우기 */
+}

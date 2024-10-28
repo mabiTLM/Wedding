@@ -73,11 +73,15 @@ document.getElementById('kakao-share-btn').addEventListener('click', function ()
 
 
 
-// 이미지 클릭 시 모달 열기
-document.querySelectorAll('.slide-img').forEach((img) => {
-  img.addEventListener('click', (event) => {
-    const src = event.target.getAttribute('src');
-    document.getElementById('modalImage').setAttribute('src', src);
-    new bootstrap.Modal(document.getElementById('imageModal')).show();
+// 이미지 클릭 시 모달 열기 및 해당 이미지로 이동
+document.querySelectorAll('.slide-img').forEach((img, index) => {
+  img.addEventListener('click', () => {
+    const modal = new bootstrap.Modal(document.getElementById('imageModal'));
+    modal.show();
+
+    // 클릭한 이미지에 해당하는 슬라이드로 이동
+    const modalCarousel = document.getElementById('modalCarousel');
+    const bootstrapCarousel = bootstrap.Carousel.getOrCreateInstance(modalCarousel);
+    bootstrapCarousel.to(index);
   });
 });
