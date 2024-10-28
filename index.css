@@ -51,6 +51,8 @@ body{
 }
 
 .show-button {
+  border: 1px solid black;
+  border-bottom: none;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   text-align: left;
@@ -58,7 +60,6 @@ body{
   padding: 10px 20px;
   background-color: #f1e5d4;
   cursor: pointer;
-  border-bottom: none;
 }
 
 .show-button:hover {
