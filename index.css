@@ -55,7 +55,9 @@ body{
   border-bottom: none;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
-  text-align: left;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
   width: 90%;
   padding: 10px 20px;
   cursor: pointer;
@@ -63,6 +65,10 @@ body{
 
 .show-button:hover {
   background-color: #fefefe;
+}
+
+.click-img{
+  width: 3%;
 }
 
 /* 계좌번호 섹션 초기 상태: 숨김 */
