@@ -43,6 +43,12 @@ body{
 .map {
   width: 80%;
 }
+.map-comment{
+  font-size: 17px;
+}
+.map-comment-name{
+  text-decoration: underline;
+}
 
 .account {
   margin-left: 10%;
