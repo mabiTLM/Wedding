@@ -186,19 +186,26 @@ body{
 }
 
 
-.modal-body img {
+/* 모달 바디 - 이미지 중앙 정렬 */
+.modal-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .modal-body img {
   width: 100%;
   height: auto;
   max-height: 80vh; /* 최대 높이 설정 */
-}
+} */
 
 /* 모달 창이 화면을 꽉 채우고 검은색 배경으로 설정 */
 .modal-fullscreen .modal-content {
   background-color: #000;
 }
 
-/* 모달 스타일 */
+/* 모달 이미지가 화면 가득 차게 중앙에 위치 */
 .modal-img {
-  height: 100vh;
+  max-height: 90vh;
   object-fit: contain; /* 이미지 비율을 유지하면서 화면 가득 채우기 */
 }
