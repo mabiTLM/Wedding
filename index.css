@@ -54,20 +54,21 @@ body{
 }
 
 .map-comment{
-  font-size: 17px; 
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
 }
 .map-comment-name{
   text-decoration: underline;
 }
 .map-comment2{
-  display: flex;
-  justify-content: center;
+  width: 80%;
+  background-color: transparent; 
+  border: 2px solid #E6e6e6;     
+  border-radius: 15px;
+
 }
 .map-comment-where{
-  width: 80%;
-  background-color: transparent; /* 투명 배경 */
-  border: 2px solid white;       /* 하얀 테두리 */
-  border-radius: 15px;           /* 모서리를 둥글게 */
 }
 
 .account {
