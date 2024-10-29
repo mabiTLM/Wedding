@@ -62,7 +62,7 @@ document.getElementById('kakao-share-btn').addEventListener('click', function ()
     objectType: 'feed',
     content:{
       title: '임현규♡최수진의 모바일청첩장',
-      description: '현규 수진 결혼합니다.',
+      description: '',
       imageUrl: 'https://github.com/mabiTLM/Wedding/blob/master/images/gallery/temp_img1.jpg?raw=true',
       link: {
         mobileWebUrl: 'https://mabitlm.github.io/Wedding/',
