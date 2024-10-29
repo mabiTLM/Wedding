@@ -27,7 +27,6 @@ body{
 
 .welcome_name{
   font-size: calc(1.3rem + .6vw); /*h3크기*/
-  margin-bottom: 10px;
 }
 
 .imageCenter {
