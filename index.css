@@ -130,6 +130,17 @@ body{
   margin-bottom: 5%;
 }
 
+.wedding-comment{
+  width: 40%;
+  margin: 0 auto;
+  justify-content: center;
+  padding-left: 55px;
+}
+
+.wedding-comment-inner{
+  text-align: left;
+}
+
 .parent-name {
   /* 부모 이름 영역에 대한 스타일 */
   margin-right: 2%; /* 두 영역 사이의 간격 조정 */
