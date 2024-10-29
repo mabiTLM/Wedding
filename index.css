@@ -19,7 +19,9 @@ body{
   font-size: 20px; /* h3의 기본 크기 */
   font-weight: bold; /* 두껍게 */
 }
-
+.info{
+  margin-bottom: 10px;
+}
 .welcome {
   margin: auto;
   padding-top: 1px;
