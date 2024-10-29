@@ -45,11 +45,13 @@ body{
 
 .map-button-kakao{
   width: 40%;
-  border-radius: 15px;
+
+  background-color: yellow;
 }
 .map-button-naver{
   width: 40%;
-  border-radius: 15px;  
+
+  background-color: #2db400;
 }
 
 .map-comment{
