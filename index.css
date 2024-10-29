@@ -199,8 +199,8 @@ body{
 
 .carousel-inner img {
   width: 100%;      /* 너비를 100%로 설정 */
-  height: 700px;    /* 고정 높이 설정 (원하는 높이로 조정 가능) */
-  object-fit: cover; /* 비율 유지하며 잘리도록 설정 */
+  /* height: 700px;    고정 높이 설정 (원하는 높이로 조정 가능) */
+ 
 }
 
 
