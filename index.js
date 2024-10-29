@@ -62,7 +62,7 @@ document.getElementById('kakao-share-btn').addEventListener('click', function ()
     objectType: 'feed',
     content:{
       title: '임현규♡최수진의 모바일청첩장',
-      description: '',
+      description: '25년 9월 6일 11시 세인트 메리엘',
       imageUrl: 'https://github.com/mabiTLM/Wedding/blob/master/images/gallery/temp_img1.jpg?raw=true',
       link: {
         mobileWebUrl: 'https://mabitlm.github.io/Wedding/',
@@ -71,7 +71,7 @@ document.getElementById('kakao-share-btn').addEventListener('click', function ()
     },
     buttons: [
       {
-        title: '축하하러 가기',
+        title: '눌러서 확인하기',
         link: {
           mobileWebUrl: 'https://mabitlm.github.io/Wedding/',
           webUrl: 'https://mabitlm.github.io/Wedding/',
