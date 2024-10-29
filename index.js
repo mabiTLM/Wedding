@@ -56,10 +56,9 @@ function copyLink(button) {
 // 카카오 SDK 초기화
 Kakao.init('4a8ae79f847849b761fc92e3177717ca');  // 'YOUR_APP_KEY'에 카카오 JavaScript 키를 넣으세요
 console.log(Kakao.isInitialized());  // 초기화 확인
-
+// objectType: 'text',
 document.getElementById('kakao-share-btn').addEventListener('click', function () {
-  Kakao.Share.sendDefault({
-    // objectType: 'text',
+  Kakao.Share.sendDefault({    
     objectType: 'feed',
     text: '임현규♡최수진의 모바일청첩장',
     description: '현규 수진 결혼합니다.',
