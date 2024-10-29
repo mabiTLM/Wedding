@@ -44,11 +44,12 @@ body{
 }
 
 .map-button-kakao{
-  width: 35%;
+  width: 40%;
+  border-radius: 15px;
 }
 .map-button-naver{
-  width: 35%;
-  
+  width: 40%;
+  border-radius: 15px;  
 }
 
 .map-comment{
