@@ -59,13 +59,16 @@ console.log(Kakao.isInitialized());  // 초기화 확인
 
 document.getElementById('kakao-share-btn').addEventListener('click', function () {
   Kakao.Share.sendDefault({
-    objectType: 'text',
-    text: '우리의 결혼식에 초대합니다!',
+    // objectType: 'text',
+    objectType: 'feed',
+    text: '임현규♡최수진의 모바일청첩장',
+    description: '소중한 자리에 초대합니다.',
+    imageUrl: 'https://github.com/mabiTLM/Wedding/blob/master/images/gallery/temp_img1.jpg?raw=true',
     link: {
       mobileWebUrl: 'https://mabitlm.github.io/Wedding/',
       webUrl: 'https://mabitlm.github.io/Wedding/',
     },
-    buttonTitle: '청첩장 보기' // 공유 시 표시되는 버튼 제목
+    buttonTitle: '축하하러 가기' // 공유 시 표시되는 버튼 제목
   });
 });
 
