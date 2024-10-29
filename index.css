@@ -26,8 +26,7 @@ body{
 }
 
 .welcome_name{
-  font-size: 20px;
-  font-weight: bold;
+  font-size: calc(1.3rem + .6vw); /*h3크기*/
   margin-bottom: 10px;
 }
 
@@ -48,6 +47,11 @@ body{
 }
 .map-comment-name{
   text-decoration: underline;
+}
+.map-comment-where{
+  background-color: transparent; /* 투명 배경 */
+  border: 2px solid white;       /* 하얀 테두리 */
+  border-radius: 15px;           /* 모서리를 둥글게 */
 }
 
 .account {
@@ -122,7 +126,7 @@ body{
 
 
 .name-container {
-  font-size: 15px;
+  font-size: 20px;
   display: flex;
   align-items: center; /* 세로 정렬을 중앙으로 */
   justify-content: center; /* 수평 정렬 중앙 */
@@ -130,13 +134,13 @@ body{
   margin-bottom: 20px;
 }
 
-.wedding-comment{
-  font-size: 13px;
+.wedding-comment{  
   display: flex;
   justify-content: center;
 }
 
 .wedding-comment-inner{
+  font-size: 16px;
   text-align: left;
 }
 
