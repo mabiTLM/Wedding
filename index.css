@@ -42,6 +42,15 @@ body{
 .map {
   width: 80%;
 }
+
+.map-button-kakao{
+  width: 35%;
+}
+.map-button-naver{
+  width: 35%;
+  
+}
+
 .map-comment{
   font-size: 17px; 
 }
