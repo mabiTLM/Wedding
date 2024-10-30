@@ -75,8 +75,9 @@ body{
 .map-comment2{
   width: 80%;
   background-color: transparent; 
-  border: 2px solid #fcfcfc;     
+  border: 2px solid #e0e0e0;     
   border-radius: 15px;
+  padding: 8px;
 
 }
 .map-comment-where{
