@@ -471,6 +471,24 @@
         integrity="sha384-oBqDVmMz4fnFO9gybN0cq1Xz7sYjH+I/BESV5iHtM7f9syE/Gsk7VrC2Y8F5W5w"
         crossorigin="anonymous"></script>
     <script src="index.js"></script>
+
+
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const mainCarousel = document.querySelector('#carouselExample');
+    const modalCarousel = document.querySelector('#modalCarousel');
+
+    const mainInstance = bootstrap.Carousel.getOrCreateInstance(mainCarousel);
+    const modalInstance = bootstrap.Carousel.getOrCreateInstance(modalCarousel);
+
+    // 모달에서 슬라이드 바뀔 때 → 메인 캐러셀도 동기화
+    modalCarousel.addEventListener('slid.bs.carousel', function (event) {
+      const index = event.to;
+      mainInstance.to(index);
+    });
+  });
+</script>
+
 </body>
 
 </html>
