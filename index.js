@@ -97,14 +97,3 @@ document.querySelectorAll('.slide-img').forEach((img, index) => {
     bootstrapCarousel.to(index);
   });
 });
-
-
-const modal-plus = document.querySelectorAll('.img-wrap-modal');
-
-modal-plus.forEach(el => {
-  new PinchZoom(el, {
-    maxZoom: 3,
-    minZoom: 1,
-    contain: 'outside'
-  });
-});
