@@ -245,7 +245,7 @@ body{
 
 /* 슬라이드 높이만 반응형으로 잡아 줌 */
 .carousel-item {
-  height: 60vh;            /* ↔ 필요하면 50~70vh 조정 */
+  height: 90vh;            /* ↔ 필요하면 50~70vh 조정 */
   background:#000;         /* 여백 색 */
 }
 
@@ -268,23 +268,12 @@ body{
 
 
 
-
-
-
-
-
 /* 모달 바디 - 이미지 중앙 정렬 */
 .modal-body {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-/* .modal-body img {
-  width: 100%;
-  height: auto;
-  max-height: 80vh; /* 최대 높이 설정 */
-} */
 
 /* 모달 창이 화면을 꽉 채우고 검은색 배경으로 설정 */
 .modal-fullscreen .modal-content {
