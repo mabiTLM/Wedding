@@ -262,6 +262,14 @@ body{
   justify-content: center; /* 수평 중앙 */
 }
 
+.img-wrap-modal{
+  height: 100%;
+  display: flex;
+  align-items: center;     /* 수직 중앙 */
+  justify-content: center; /* 수평 중앙 */
+  background: #000000
+}
+
 /* 이미지 비율 유지 */
 .carousel-item .img-wrap img,
 .modal-img {
