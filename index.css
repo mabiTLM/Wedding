@@ -245,7 +245,7 @@ body{
 
 /* 슬라이드 높이만 반응형으로 잡아 줌 */
 .carousel-item {
-  height: 100vh;            /* ↔ 필요하면 50~70vh 조정 */
+  height: 99vh;            /* ↔ 필요하면 50~70vh 조정 */
   background:#000;         /* 여백 색 */
 }
 
@@ -257,9 +257,9 @@ body{
   justify-content: center; /* 수평 중앙 */
 }
 
-/* 이미지 비율 유지 .modal-img */
-.carousel-item .img-wrap img
- {
+/* 이미지 비율 유지 */
+.carousel-item .img-wrap img,
+.modal-img {
   max-height: 100%;
   width: auto;
   object-fit: contain;
