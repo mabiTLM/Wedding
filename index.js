@@ -82,9 +82,6 @@ document.getElementById('kakao-share-btn').addEventListener('click', function ()
 });
 
 
-
-
-
 // 이미지 클릭 시 모달 열기 및 해당 이미지로 이동
 document.querySelectorAll('.slide-img').forEach((img, index) => {
   img.addEventListener('click', () => {
