@@ -246,6 +246,7 @@ body{
 /* 슬라이드 높이만 반응형으로 잡아 줌 */
 .carousel-item {
   height: 90vh;
+  background:#FFFCFD;         /* 여백 색 */
 }
 
 /* 새로운 래퍼: 이미지 중앙 배치 */
