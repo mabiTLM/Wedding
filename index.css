@@ -285,18 +285,8 @@ body{
   align-items: center;
 }
 
-/* 모달 창이 화면을 꽉 채우고 검은색 배경으로 설정 
-.modal-fullscreen .modal-content {
-  background-color: #000;
-}*/
-
 /* 모달 이미지가 화면 가득 차게 중앙에 위치 */
 .modal-img {
   max-height: 90vh;
   object-fit: contain; /* 이미지 비율을 유지하면서 화면 가득 채우기 */
-}
-
-btn-close {
-   width: 10em;    /* 원하는 크기로 조절 */
-  height: 10em;
 }
