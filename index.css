@@ -263,7 +263,6 @@ body{
 }
 
 .img-wrap-modal{
-  resize: both; /*확대*/
   height: 100%;
   display: flex;
   align-items: center;     /* 수직 중앙 */
