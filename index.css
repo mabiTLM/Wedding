@@ -238,11 +238,39 @@ body{
 }/*87CEEB , B0E2FF, BFEFFF 뭐가 좋을까*/
 
 
-
-
 .carousel-inner img {
   width: 100%;      /* 너비를 100%로 설정 */ 
 }
+
+
+/* 슬라이드 높이만 반응형으로 잡아 줌 */
+.carousel-item {
+  height: 60vh;            /* ↔ 필요하면 50~70vh 조정 */
+  background:#000;         /* 여백 색 */
+}
+
+/* 새로운 래퍼: 이미지 중앙 배치 */
+.carousel-item .img-wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;     /* 수직 중앙 */
+  justify-content: center; /* 수평 중앙 */
+}
+
+/* 이미지 비율 유지 */
+.carousel-item .img-wrap img,
+.modal-img {
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+
+
+
+
+
+
 
 
 /* 모달 바디 - 이미지 중앙 정렬 */
