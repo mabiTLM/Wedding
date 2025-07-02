@@ -244,26 +244,6 @@ body{
   width: 100%;      /* 너비를 100%로 설정 */ 
 }
 
-/* ① 슬라이드(캐러셀) 자체를 반응형 높이 + Flexbox 컨테이너로 */
-.carousel-item {
-  height: 60vh;                 /* 화면 세로의 60%  ― 필요하면 50 ~ 70vh 로 조정 */
-  display: flex;
-  align-items: center;          /* 수직 중앙 */
-  justify-content: center;      /* 수평 중앙 */
-  background-color: #000;       /* 여백 배경색 (검정). 파스텔톤이면 #FFF4F8 등으로 변경 */
-}
-
-/* ② 슬라이드·모달 공통 이미지 규칙 (비율 유지 + 최대높이 채움) */
-.carousel-item img,
-.modal-img {
-  max-height: 100%;
-  width: auto;
-  object-fit: contain;          /* 비율 유지하며 안쪽에 맞춤 */
-}
-
-
-
-
 
 /* 모달 바디 - 이미지 중앙 정렬 */
 .modal-body {
