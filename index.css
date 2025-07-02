@@ -278,9 +278,6 @@ body{
   object-fit: contain;
 }
 
-
-
-
 /* 모달 바디 - 이미지 중앙 정렬 */
 .modal-body {
   display: flex;
@@ -297,4 +294,9 @@ body{
 .modal-img {
   max-height: 90vh;
   object-fit: contain; /* 이미지 비율을 유지하면서 화면 가득 채우기 */
+}
+
+btn-close-width {
+   width: 10em;    /* 원하는 크기로 조절 */
+  height: 10em;
 }
