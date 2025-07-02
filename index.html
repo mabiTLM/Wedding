@@ -503,7 +503,6 @@
         crossorigin="anonymous"></script>
     <script src="index.js"></script>
 
-
     <script>
   document.addEventListener("DOMContentLoaded", function () {
     const mainCarousel = document.querySelector('#carouselExample');
@@ -516,6 +515,25 @@
     modalCarousel.addEventListener('slid.bs.carousel', function (event) {
       const index = event.to;
       mainInstance.to(index);
+    });
+  });
+    </script>
+
+    <!-- pinch-zoom-js CDN -->
+<script src="https://unpkg.com/pinch-zoom-js/dist/pinch-zoom.min.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // .img-wrap-modal 클래스 가진 모든 요소 선택
+    const elements = document.querySelectorAll('.img-wrap-modal');
+
+    // 각각에 PinchZoom 인스턴스 생성
+    elements.forEach(el => {
+      new PinchZoom(el, {
+        maxZoom: 3,
+        minZoom: 1,
+        contain: 'outside'
+      });
     });
   });
 </script>
