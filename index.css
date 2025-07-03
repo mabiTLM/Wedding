@@ -294,3 +294,7 @@ body{
 #modalCarousel{
   touch-action: auto !important;   /* ← pan-y 대신 auto */
 }
+
+#modalCarousel .carousel-inner{
+  touch-action: pan-y pinch-zoom;   /* 세로 스크롤 + 핀치-줌 허용, 가로 스와이프는 JS에게   */
+}
