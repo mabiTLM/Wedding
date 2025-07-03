@@ -298,3 +298,14 @@ body{
 #modalCarousel .carousel-inner{
   touch-action: pan-y pinch-zoom;   /* 세로 스크롤 + 핀치-줌 허용, 가로 스와이프는 JS에게   */
 }
+
+.btn-close {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: 1.5rem;
+}
+
+.btn-close-white {
+  filter: brightness(200%);
+  opacity: 1; /* 더 진하게 */
+}
