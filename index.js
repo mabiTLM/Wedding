@@ -88,31 +88,26 @@ const modalCarouselEl = document.getElementById('modalCarousel');
 const bsModal         = new bootstrap.Modal(imageModalEl);
 const bsCarousel      = bootstrap.Carousel.getOrCreateInstance(modalCarouselEl);
 
-/* 썸네일 클릭 → 모달 열고 해당 슬라이드로 이동 */
+/* 1) 썸네일 클릭 → 모달 열고 같은 index 슬라이드로 */
 document.querySelectorAll('.slide-img').forEach((img, idx) => {
   img.addEventListener('click', () => {
-    bsModal.show();       // 모달 열기
-    bsCarousel.to(idx);   // 같은 index 슬라이드로 이동
+    bsCarousel.to(idx);
+    bsModal.show();
   });
 });
 
-/* 모달이 열릴 때 히스토리 스택에 가짜 state 추가 */
+/* 2) 모달이 열리면 히스토리 스택에 가짜 state 하나 push */
 imageModalEl.addEventListener('show.bs.modal', () => {
-  if (!history.state || !history.state.modalOpen) {
-    history.pushState({ modalOpen: true }, '');
-  }
+  history.pushState({ modalOpen: true }, '');
 });
 
-/* ‘뒤로가기(popstate)’ 발생 시 모달만 닫기 */
-window.addEventListener('popstate', e => {
-  if (e.state && e.state.modalOpen) {
-    bsModal.hide();
-  }
-});
-
-/* 모달이 완전히 닫히면 가짜 state 제거 */
-imageModalEl.addEventListener('hidden.bs.modal', () => {
-  if (history.state && history.state.modalOpen) {
-    history.back();   // modalOpen state pop
+/* 3) popstate(← 뒤로가기) 발생 시:  
+      - 모달이 켜져 있으면 **모달만** 닫고,  
+      - 아니면(모달이 꺼진 상태) 브라우저 기본 동작 */
+window.addEventListener('popstate', () => {
+  if (imageModalEl.classList.contains('show')) {
+    bsModal.hide();          // 모달만 끄기
+    /* popstate 안에서 모달을 닫으면,  
+       이미 한 칸 뒤로간 상태라 추가 히스토리 조작은 필요 없음 */
   }
 });
