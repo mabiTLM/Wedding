@@ -298,3 +298,15 @@ body{
 #modalCarousel .carousel-inner{
   touch-action: pan-y pinch-zoom;   /* 세로 스크롤 + 핀치-줌 허용, 가로 스와이프는 JS에게   */
 }
+
+.modal-header .btn-close {
+  --bs-btn-close-color: #000;
+  --bs-btn-close-opacity: 1;
+  --bs-btn-close-border-radius: 50%;
+
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.9); /* 항상 보이는 흰 원형 배경 */
+  box-shadow: 0 2px 6px rgba(0,0,0,.4);       /* 시인성 향상 */
+}
