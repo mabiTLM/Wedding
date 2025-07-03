@@ -290,3 +290,7 @@ body{
   max-height: 90vh;
   object-fit: contain; /* 이미지 비율을 유지하면서 화면 가득 채우기 */
 }
+
+#modalCarousel{
+  touch-action: auto !important;   /* ← pan-y 대신 auto */
+}
