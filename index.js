@@ -82,15 +82,37 @@ document.getElementById('kakao-share-btn').addEventListener('click', function ()
 });
 
 
-// 이미지 클릭 시 모달 열기 및 해당 이미지로 이동
-document.querySelectorAll('.slide-img').forEach((img, index) => {
-  img.addEventListener('click', () => {
-    const modal = new bootstrap.Modal(document.getElementById('imageModal'));
-    modal.show();
+/* =========  갤러리 모달 & 뒤로가기 처리 ========= */
+const imageModalEl    = document.getElementById('imageModal');
+const modalCarouselEl = document.getElementById('modalCarousel');
+const bsModal         = new bootstrap.Modal(imageModalEl);
+const bsCarousel      = bootstrap.Carousel.getOrCreateInstance(modalCarouselEl);
 
-    // 클릭한 이미지에 해당하는 슬라이드로 이동
-    const modalCarousel = document.getElementById('modalCarousel');
-    const bootstrapCarousel = bootstrap.Carousel.getOrCreateInstance(modalCarousel);
-    bootstrapCarousel.to(index);
+/* 썸네일 클릭 → 모달 열고 해당 슬라이드로 이동 */
+document.querySelectorAll('.slide-img').forEach((img, idx) => {
+  img.addEventListener('click', () => {
+    bsModal.show();       // 모달 열기
+    bsCarousel.to(idx);   // 같은 index 슬라이드로 이동
   });
+});
+
+/* 모달이 열릴 때 히스토리 스택에 가짜 state 추가 */
+imageModalEl.addEventListener('show.bs.modal', () => {
+  if (!history.state || !history.state.modalOpen) {
+    history.pushState({ modalOpen: true }, '');
+  }
+});
+
+/* ‘뒤로가기(popstate)’ 발생 시 모달만 닫기 */
+window.addEventListener('popstate', e => {
+  if (e.state && e.state.modalOpen) {
+    bsModal.hide();
+  }
+});
+
+/* 모달이 완전히 닫히면 가짜 state 제거 */
+imageModalEl.addEventListener('hidden.bs.modal', () => {
+  if (history.state && history.state.modalOpen) {
+    history.back();   // modalOpen state pop
+  }
 });
