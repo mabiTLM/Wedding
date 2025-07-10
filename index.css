@@ -110,6 +110,10 @@ body{
   width: 25px;
 }
 
+.main-img {
+  width: 80%; /* 가로 폭을 100%로 설정 */
+}
+
 /* 계좌번호 섹션 초기 상태: 숨김 */
 .account-info {
   border: 1px solid black;
