@@ -30,6 +30,9 @@ body{
 .welcome_name{
   font-size: calc(1.3rem + .6vw); /*h3크기*/
 }
+.where_text{
+  font-size: 16px;
+}
 
 .imageCenter {
   text-align: center;
