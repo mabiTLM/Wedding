@@ -31,7 +31,7 @@ body{
   font-size: calc(1.3rem + .6vw); /*h3크기*/
 }
 .where_text{
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .imageCenter {
@@ -176,7 +176,7 @@ body{
 }
 
 .wedding-comment-inner{
-  font-size: 16px;
+  font-size: 1rem;
   text-align: left;
 }
 
